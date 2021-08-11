@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  homebrew:
+  release:
     runs-on: macos-latest
 #    if: ${{ github.ref == 'refs/heads/main' }}
     steps:
@@ -21,7 +21,7 @@ jobs:
         with:
           version: "12.4"
 
-      - uses: mboxplus/mbox-release-plugin-action@v1
+      - uses: mboxplus/mbox-release-plugin-action@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           force: false
