@@ -6,7 +6,7 @@ on:
 
 jobs:
   release:
-    runs-on: macos-latest
+    runs-on: macos-11
 #    if: ${{ github.ref == 'refs/heads/main' }}
     steps:
       - uses: actions/checkout@v2
@@ -16,10 +16,10 @@ jobs:
           ruby-version: 2.6
           bundler-cache: true
 
-      - name: "Select Xcode 12.4"
+      - name: "Select Xcode 12.5"
         uses: devbotsxyz/xcode-select@v1
         with:
-          version: "12.4"
+          version: "12.5"
 
       - uses: mboxplus/mbox-release-plugin-action@main
         with:
