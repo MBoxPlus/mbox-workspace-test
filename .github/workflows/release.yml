@@ -24,4 +24,4 @@ jobs:
       - uses: mboxplus/mbox-release-plugin-action@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          force: false
+          force: true
