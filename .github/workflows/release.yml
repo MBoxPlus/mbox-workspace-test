@@ -15,6 +15,7 @@ jobs:
         with:
           ruby-version: 2.6
       - run: gem install bundler
+      - run: bundle config source https://rubygems.org
       - run: bundle config path vendor/bundle
 
       - name: "Select Xcode 12.4"
