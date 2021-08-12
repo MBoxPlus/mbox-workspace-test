@@ -14,7 +14,6 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6
-      - run: gem source -a "https://rubygems.org"
 
       - name: "Select Xcode 12.4"
         uses: devbotsxyz/xcode-select@v1
